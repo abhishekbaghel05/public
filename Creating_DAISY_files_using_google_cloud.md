@@ -17,7 +17,7 @@ Perform the follwing steps in order
 6. Copy the API key
 7. Open `pipeline.properties` file in any ascii editor from the location `C:\Program Files (x86)\DAISY Pipeline 2\daisy-pipeline\etc` 
 8. Uncomment the the line ``
-9. Create a new file `config.xml` the follwing contents and save it to the computer
+9. Create a new file `config.xml` the follwing contents and save it to the computer. 
   ```html
   <config>
     <property key="org.daisy.pipeline.tts.google.apikey" value="Your API Key"/>
@@ -26,6 +26,9 @@ Perform the follwing steps in order
     <property key="org.daisy.pipeline.tts.google.samplerate" value="24000"/>  
   </config>
   ```
+10. The configuration properties can be changed as per the requirments. You can refer to the [list of voices and languages](https://cloud.google.com/text-to-speech/docs/voices) supported by Google Cloud TTS. 
+11. To know more refer to [TTS user guide](http://daisy.github.io/pipeline/Get-Help/User-Guide/Text-To-Speech/) of DAISY Pipeline.
+
 
 ## Converting an EPUB file to DAISY Audio
 1. Open DAISY Pipeline 2 sotware from the start menu
