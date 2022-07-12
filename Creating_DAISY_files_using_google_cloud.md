@@ -18,15 +18,14 @@ Perform the follwing steps in order
 7. Open `pipeline.properties` file in any ascii editor from the location `C:\Program Files (x86)\DAISY Pipeline 2\daisy-pipeline\etc` 
 8. Uncomment the the line ``
 9. Create a new file `config.xml` the follwing contents and save it to the computer
-    ```html
+```html
 <config>
   <property key="org.daisy.pipeline.tts.google.apikey" value="AIzaSyDUdgOeR-leZUg1MDzKoj-quXoU2va_Sw8"/>
   <property key="org.daisy.pipeline.tts.log" value="true"/>
   <voice engine="google" name="en-US-Standard-A" gender="MALE" priority="100" lang="en-US"/>
   <property key="org.daisy.pipeline.tts.google.samplerate" value="24000"/>  
 </config>
-
-    ```
+```
 
 ## Converting an EPUB file to DAISY Audio
 1. Open DAISY Pipeline 2 sotware from the start menu
