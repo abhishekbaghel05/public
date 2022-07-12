@@ -20,7 +20,7 @@ Perform the follwing steps in order
 9. Create a new file `config.xml` the follwing contents and save it to the computer
 ```html
 <config>
-  <property key="org.daisy.pipeline.tts.google.apikey" value="AIzaSyDUdgOeR-leZUg1MDzKoj-quXoU2va_Sw8"/>
+  <property key="org.daisy.pipeline.tts.google.apikey" value="Your API Key"/>
   <property key="org.daisy.pipeline.tts.log" value="true"/>
   <voice engine="google" name="en-US-Standard-A" gender="MALE" priority="100" lang="en-US"/>
   <property key="org.daisy.pipeline.tts.google.samplerate" value="24000"/>  
