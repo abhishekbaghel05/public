@@ -9,13 +9,14 @@
 ## Setting Up Google Cloud TTS
 1. Visit cloud.google.com and create a new accout if it is not existing
 2. Create a new project and give a name to it
-3. Create a new Billing account by adding your credit card details.
+3. Create a new Billing account by adding your credit card details
 4. Enable Google Cloud TTS API Service. Pricing and other details are available  
-5. Generate an API Key for sending the conversion requsts to google cloud. 
+5. For sending the conversion requsts to google cloud generate an API Key by going to API & Credentials --> Credentials
 6. Copy the API key
-7. 
+7. Open 
 
 ## Converting an EPUB file to DAISY Audio
 1. Open DAISY Pipeline 2 sotware from the start menu
-2. Click on `File` and Create a `New job`
+2. Click on `File` and click on `New job`
 3. Select `EPUB to DAISY` option
+4. 
