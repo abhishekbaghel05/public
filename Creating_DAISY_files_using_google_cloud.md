@@ -1,4 +1,6 @@
-# Creating DAISY files using Google Cloud TTS
+# Converting EPUB files to DAISY files with audio using Google Cloud TTS on Windows 10/11
+
+Perform the follwing steps in order
 
 ## Installing and Setting up Daisy Pipeline 2
 1. Dowload latest version of [DAISY Pipeline 2](https://daisy.github.io/pipeline/Download.html).
@@ -13,7 +15,18 @@
 4. Enable Google Cloud TTS API Service. Pricing details are available on the [tts pricing page](https://cloud.google.com/text-to-speech/pricing)
 5. For sending the conversion requsts to google cloud generate an API Key by going to `APIs & Services > Credentials > Create Credential > API Key`
 6. Copy the API key
-7. Open 
+7. Open `pipeline.properties` file in any ascii editor from the location `C:\Program Files (x86)\DAISY Pipeline 2\daisy-pipeline\etc` 
+8. Uncomment the the line ``
+9. Create a new file `config.xml` the follwing contents and save it to the computer
+    ```html
+<config>
+  <property key="org.daisy.pipeline.tts.google.apikey" value="AIzaSyDUdgOeR-leZUg1MDzKoj-quXoU2va_Sw8"/>
+  <property key="org.daisy.pipeline.tts.log" value="true"/>
+  <voice engine="google" name="en-US-Standard-A" gender="MALE" priority="100" lang="en-US"/>
+  <property key="org.daisy.pipeline.tts.google.samplerate" value="24000"/>  
+</config>
+
+    ```
 
 ## Converting an EPUB file to DAISY Audio
 1. Open DAISY Pipeline 2 sotware from the start menu
