@@ -14,19 +14,34 @@ Perform the follwing steps in order
 3. Create a new Billing account by adding your credit card details by going to `Google Cloud Console > Navigation Menu > Billing > Create`
 4. Enable Google Cloud TTS API Service. Pricing details are available on the [tts pricing page](https://cloud.google.com/text-to-speech/pricing)
 5. For sending the conversion requsts to google cloud generate an API Key by going to `APIs & Services > Credentials > Create Credential > API Key`
-6. Copy the API key
+6. Copy the Your_API_key
 7. Open `pipeline.properties` file in any ascii editor from the location `C:\Program Files (x86)\DAISY Pipeline 2\daisy-pipeline\etc` 
-8. Uncomment the the line ``
+8. Uncomment the the lines as given below and enter the API Key at the place `Your_API_key`
+```
+## Allow dynamically setting of TTS properties (default "true")
+org.daisy.pipeline.tts.host.protection=true
+
+## Temporary directory used during audio synthesis (default "/var/folders/mr/f6s9zqtn03d8rgzxb96_2bh00000gn/T/")
+org.daisy.pipeline.tts.audio.tmpdir=/tm
+
+# Google Cloud TTS settings
+org.daisy.pipeline.tts.google.apikey=Your_API_Key
+org.daisy.pipeline.tts.google.samplerate=22050
+org.daisy.pipeline.tts.google.priority=15
+
+```
+
 9. Create a new file `config.xml` the follwing contents and save it to the computer.
 ```html
   <config>  
-    <property key="org.daisy.pipeline.tts.google.apikey" value="Your API Key"/>
+    <property key="org.daisy.pipeline.tts.google.apikey" value="Your_API_Key"/>
     <property key="org.daisy.pipeline.tts.log" value="true"/>
     <voice engine="google" name="en-US-Standard-A" gender="MALE" priority="100" lang="en-US"/>
     <property key="org.daisy.pipeline.tts.google.samplerate" value="24000"/>
   </config>
  ```
-The configuration properties can be changed as per the requirments. You can refer to the [list of voices and languages](https://cloud.google.com/text-to-speech/docs/voices) supported by Google Cloud TTS. To know more refer to [TTS user guide](http://daisy.github.io/pipeline/Get-Help/User-Guide/Text-To-Speech/) of DAISY Pipeline 2.
+The configuration properties can be changed as per the requirments. You can refer to the [list of voices and languages](https://cloud.google.com/text-to-speech/docs/voices) supported by Google Cloud TTS. To know more refer to [TTS user guide](http://daisy.github.io/pipeline/Get-Help/User-Guide/Text-To-Speech/) of DAISY Pipeline 2. <br>
+
 10. sss
 
 ## Converting an EPUB file to DAISY Audio
