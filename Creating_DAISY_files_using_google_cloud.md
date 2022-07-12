@@ -14,9 +14,9 @@ Perform the follwing steps in order
 3. Create a new Billing account by adding your credit card details by going to `Google Cloud Console > Navigation Menu > Billing > Create`
 4. Enable Google Cloud TTS API Service. Pricing details are available on the [tts pricing page](https://cloud.google.com/text-to-speech/pricing)
 5. For sending the conversion requsts to google cloud generate an API Key by going to `APIs & Services > Credentials > Create Credential > API Key`
-6. Copy the Your_API_key
+6. Copy the API key.
 7. Open `pipeline.properties` file in any ascii editor from the location `C:\Program Files (x86)\DAISY Pipeline 2\daisy-pipeline\etc` 
-8. Uncomment the the lines as given below and enter the API Key at the place `Your_API_key`
+8. Uncomment the the lines as given below and enter the API Key at the place `Your_API_Key`
 ```
 ## Allow dynamically setting of TTS properties (default "true")
 org.daisy.pipeline.tts.host.protection=true
@@ -42,7 +42,7 @@ org.daisy.pipeline.tts.google.priority=15
  ```
 The configuration properties can be changed as per the requirments. You can refer to the [list of voices and languages](https://cloud.google.com/text-to-speech/docs/voices) supported by Google Cloud TTS. To know more refer to [TTS user guide](http://daisy.github.io/pipeline/Get-Help/User-Guide/Text-To-Speech/) of DAISY Pipeline 2. <br>
 
-10. sss
+10. --------
 
 ## Converting an EPUB file to DAISY Audio
 1. Open DAISY Pipeline 2 sotware from the start menu
