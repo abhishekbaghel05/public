@@ -6,9 +6,8 @@ Perform the follwing steps in order
 1. Dowload latest version of [DAISY Pipeline 2](https://daisy.github.io/pipeline/Download.html).
 2. The DAISY Pipeline 2 desktop application require a Java runtime environment. The minimum required version of Java is 11. At the time of installation in Windows, installer will promt to install Java. Click on yes. 
 3. Install the DAISY Pipeline 2 Software. For more information visit the [installation page](https://daisy.github.io/pipeline/Get-Help/User-Guide/Installation/#system-requirements).
-4. Open the Program Files in your C drive. Open the folder location `C:\Program Files (x86)\DAISY Pipeline 2\daisy-pipeline\jdk-11.0.2+9-jre\lib` . Download and add the file [content-types.properties](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/master/src/java.base/windows/classes/sun/net/www/content-types.properties) to this location.
-5. Download [LAME MP3 Encoder](https://lame.sourceforge.io/download.php). Extact the folder. Save it in a safe place like `C:\Program Files (x86)`.
-6. Add the path to 'lame' to the environment variables so that DAISY pipeline can find its location.
+4. Download [LAME MP3 Encoder](https://lame.sourceforge.io/download.php). Extact the folder. Save it in a safe place like `C:\Program Files (x86)`.
+5. Add the path to 'lame' to the environment variables so that DAISY pipeline can find its location.
 
 ## Setting Up Google Cloud TTS
 1. Visit cloud.google.com and create a new accout if it is not existing.
